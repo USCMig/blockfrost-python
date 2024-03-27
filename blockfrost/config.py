@@ -7,7 +7,7 @@ except ImportError:  # for Python<3.8
 
 
 class ApiUrls(Enum):
-    mainnet = "https://localhost:3000"
+    mainnet = "http://localhost:3000"
     preprod = "https://cardano-preprod.blockfrost.io/api"
     preview = "https://cardano-preview.blockfrost.io/api"
     testnet = "https://cardano-testnet.blockfrost.io/api"
