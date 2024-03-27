@@ -9,7 +9,7 @@ from ..utils import Api, ApiUrls, request_wrapper
 
 class BlockFrostApi(Api):
 
-    def __init__(self, project_id: str = None, base_url: 'http://localhost:3000', api_version: "2.0.0"):
+    def __init__(self, project_id: str = None, base_url: str = None, api_version: str = None):
         super().__init__(
             project_id=project_id,
             base_url=base_url if base_url else os.environ.get(
